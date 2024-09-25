@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Contains policies used from the API-->
+<device-admin
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-policies>
+        <watch-login/>
+        <force-lock />
+        <!-- Allow the device admin to reset the user's password -->
+        <reset-password />
+        <limit-password/>
+        <expire-password/>
+        <!-- Allow the device admin to wipe all user data from the device -->
+        <wipe-data />
+    </uses-policies>
+</device-admin>

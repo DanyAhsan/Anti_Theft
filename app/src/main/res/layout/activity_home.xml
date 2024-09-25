@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/header_holder"
+            android:layout_width="match_parent"
+            android:layout_height="372dp"
+            android:background="@drawable/curved_head_holder"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <include layout="@layout/app_logo_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header_holder"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/curved_main_body_holder"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="-120dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <!-- First Button -->
+                <Button
+                    android:id="@+id/buttonEditProfile"
+                    style="@style/PrimaryButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Edit Profile"
+                    android:layout_gravity="right|end"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- Card Button Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|center_vertical">
+
+                <include
+                    android:id="@+id/buttonTrackDevice"
+                    layout="@layout/button_track_device"
+                    android:gravity="left|start" />
+                <include
+                    android:id="@+id/buttonIntruders"
+                    layout="@layout/button_intruders"
+                    android:gravity="right|end" />
+            </LinearLayout>
+            <!-- Card Button Row 1 End -->
+
+            <!-- Card Button Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center|center_vertical">
+
+                <include
+                    android:id="@+id/buttonLogs"
+                    layout="@layout/button_logs"
+                    android:gravity="left|start" />
+                <include
+                    android:id="@+id/buttonSettings"
+                    layout="@layout/button_settings"
+                    android:gravity="right|end" />
+            </LinearLayout>
+            <!-- Card Button Row 2 End -->
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+<!--
+Icons:
+<a href="https://www.flaticon.com/free-icons/track" title="track icons">Track icons created by berkahicon - Flaticon</a>
+<div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+<a href="https://www.flaticon.com/free-icons/configuration" title="configuration icons">Configuration icons created by Freepik - Flaticon</a>
+<div> Icons made by <a href="https://www.flaticon.com/authors/sbts2018" title="SBTS2018"> SBTS2018 </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+-->
