@@ -103,7 +103,7 @@ public class HomeActivity extends AppCompatActivity {
         adminEnabled = devicePolicyManager.isAdminActive(dpmCom);
 
         if(adminEnabled){
-           Toast.makeText(this,"Admin Status Enabled: "+adminEnabled,Toast.LENGTH_SHORT).show();
+           //Toast.makeText(this,"Admin Status Enabled: "+adminEnabled,Toast.LENGTH_SHORT).show();
         }
         else{
             //Toast.makeText(this,"Admin Status Disabled: "+adminEnabled,Toast.LENGTH_SHORT).show();

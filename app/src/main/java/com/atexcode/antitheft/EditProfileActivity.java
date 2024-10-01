@@ -51,7 +51,6 @@ public class EditProfileActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference("users");
 
-
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Updating Profile...");
         progressDialog.setCancelable(false);
